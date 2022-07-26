@@ -12,4 +12,4 @@
 8. [布局容器](doc/8布局容器.md)
 
 ## 效果
-![demo](gui.png)
+![demo](./gui.png)
