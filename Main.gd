@@ -135,7 +135,7 @@ func containerDemo():
 	# Tabs
 	var tabDemo = Tabs.new()
 
-	tabDemo.margin_top = 120
+	tabDemo.margin_top = 20
 	tabDemo.margin_left = 720
 	tabDemo.rect_size = Vector2(200,40)
 
@@ -179,9 +179,23 @@ func layoutDemo():
 
 	var myScroll = load("res://gui/layout/ScrollDemo.gd")
 	# 只可以设置一个子节点 直接子节点使用Hbox,VBox,GridBox
-	var scrollDemo = myScroll.new(5)
+	var scrollDemo = myScroll.new(2)
 	self.add_child(scrollDemo)
 
+
+	var myHSplit = load("res://gui/layout/HSplitDemo.gd")
+	var hsplitDemo = myHSplit.new(3)
+	self.add_child(hsplitDemo)
+
+	var myVSplit = load("res://gui/layout/VSplitDemo.gd")
+	var vsplitDemo = myVSplit.new(3)
+	self.add_child(vsplitDemo)
+
+	# 选项卡
+	var myTab = load("res://gui/layout/TabDemo.gd")
+	var tabDemo = myTab.new(4)
+	self.add_child(tabDemo)
+	
 func _draw():
 	drawXY()
 

@@ -3,8 +3,8 @@ extends MarginContainer
 var num = 0
 func _init(count:int):
     num = count;
-    self.margin_top = 340
-    self.margin_left = 540
+    self.margin_top = 320
+    self.margin_left = 500
 
     # 以主题形式的添加边距
     var margin_value = 10

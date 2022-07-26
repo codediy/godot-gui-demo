@@ -3,7 +3,7 @@ extends PanelContainer
 var num = 0
 func _init(count:int):
     num = count;
-    self.margin_top = 340
+    self.margin_top = 320
     self.margin_left = 640
 
     self.rect_size = Vector2(40,40)
