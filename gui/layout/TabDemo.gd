@@ -2,6 +2,8 @@ extends TabContainer
 
 var num = 0
 func _init(count:int):
+    # 选项卡标题的字体
+    loadFont()
     num = count;
     self.margin_top = 380
     self.margin_left = 400
@@ -23,6 +25,12 @@ func initChild():
         self.add_child(btn)
         # 必须先添加子节点 再设置标题
         self.set_tab_title(k,"标题%s" % k)
+
+func loadFont():
+    var dynamic_font = DynamicFont.new()
+    dynamic_font.font_data = load("res://font/FZFSK.TTF")
+    dynamic_font.size = 10
+    self.set("custom_fonts/font", dynamic_font)
 
 func save(content):
 	var file = File.new()
